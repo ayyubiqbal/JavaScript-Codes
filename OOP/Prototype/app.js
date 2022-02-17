@@ -44,7 +44,7 @@ console.log(person); */
 
 
 // constructor function
-function PersonwithNew(name, age) {
+function Person(name, age) {
     // let this = Object.create(PersonwithNew.prototype)
 
     this.name = name;
@@ -54,7 +54,7 @@ function PersonwithNew(name, age) {
     // return this;
 }
 
-PersonwithNew.prototype = {
+Person.prototype = {
     eat() {
         console.log(`Person is eating`);
     },
@@ -69,8 +69,8 @@ PersonwithNew.prototype = {
 /* const tamim = Person('Tamim', 25);
 const iqbal = Person('Iqbal', 23); */
 
-const ayyub = new PersonwithNew('Ayyub', 25);
-const mahfuz = new PersonwithNew('Mahfuz', 23);
+const ayyub = new Person('Ayyub', 25);
+const mahfuz = new Person('Mahfuz', 23);
 ayyub.sleep()
 // console.log(tamim);
 

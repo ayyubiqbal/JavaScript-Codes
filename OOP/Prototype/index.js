@@ -1,4 +1,4 @@
-class PersonwithNew {
+class Person {
     constructor(name, age) {
         this.name = name;
         this.age = age;
@@ -15,8 +15,8 @@ class PersonwithNew {
     }
 }
 
-const ayyub = new PersonwithNew('Ayyub', 25);
-const mahfuz = new PersonwithNew('Mahfuz', 23);
+const ayyub = new Person('Ayyub', 25);
+const mahfuz = new Person('Mahfuz', 23);
 ayyub.play()
 console.log(ayyub);
 
