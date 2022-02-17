@@ -18,3 +18,15 @@ class PersonwithNew {
 const ayyub = new PersonwithNew('Ayyub', 25);
 const mahfuz = new PersonwithNew('Mahfuz', 23);
 ayyub.play()
+console.log(ayyub);
+
+
+// ------------------------------
+
+// let persons = [];
+
+let persons = new Array()
+persons.push('Iqbal')
+console.log(persons);
+
+console.log(Array.prototype)
