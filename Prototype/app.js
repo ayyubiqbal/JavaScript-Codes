@@ -29,23 +29,47 @@ console.log(person); */
     play() {
         console.log(`Iqbal is playing`);
     },
-};
+}; */
 
 
-function Person(name, age) {
-    let person = Object.create(personMethods)
+/* function Person(name, age) {
+    let person = Object.create(Person.prototype)
     // console.log(person);
 
     person.name = name;
     person.age = age;
 
     return person;
+} */
+
+function PersonwithNew(name, age) {
+    // let this = Object.create(PersonwithNew.prototype)
+
+    this.name = name;
+    this.age = age;
+    this.country = 'Bangladesh';
+
+    // return this;
 }
 
-const tamim = Person('Tamim', 25);
-tamim.play()
+PersonwithNew.prototype = {
+    eat() {
+        console.log(`Person is eating`);
+    },
+    sleep() {
+        console.log(`Person is sleeping`);
+    },
+    play() {
+        console.log(`Person is playing`);
+    },
+}
+
+/* const tamim = Person('Tamim', 25);
 const iqbal = Person('Iqbal', 23); */
 
+const ayyub = new PersonwithNew('Ayyub', 25);
+const mahfuz = new PersonwithNew('Mahfuz', 23);
+ayyub.sleep()
 // console.log(tamim);
 
 // ------------------------------
@@ -63,6 +87,6 @@ console.log(player.name); */
 
 // ------------------------------
 
-function test() { }
+/* function test() { }
 
-console.dir(test)
+console.dir(test) */
