@@ -6,6 +6,8 @@ new binding
 window binding
 */
 
+
+// ----------- implicit binding -----------
 var iqbal = {
     name: 'Iqbal',
     age: 23,
@@ -14,6 +16,8 @@ var iqbal = {
     }
 }
 // iqbal.printName()
+
+// --------------------------------
 
 var printPlayerNameFunction = function (obj) {
     obj.printPlayerName = function () {
@@ -56,6 +60,31 @@ var Person = function (name, age) {
 }
 
 var iqbal = Person('Iqbal', 23);
-console.log(iqbal);
-iqbal.printName()
-iqbal.father.printName()
+// console.log(iqbal);
+// iqbal.printName()
+// iqbal.father.printName()
+
+// ---------------------------------
+
+
+
+// ---------- explicit binding ------------
+// ---------------------------------
+var printName = function (v1, v2, v3) {
+    console.log(`${this.name} knows ${v1}, ${v2} and ${v3}`);
+}
+
+var iqbal = {
+    name: 'Iqbal',
+    age: 23,
+}
+var v1 = 'HTML';
+var v2 = 'CSS';
+var v3 = 'JavaScript';
+
+var v = [v1, v2, v3]
+
+printName.call(iqbal, v1, v2, v3)
+printName.apply(iqbal, v)
+var newFunc = printName.bind(iqbal, v1, v2, v3)
+newFunc()
