@@ -1,4 +1,5 @@
 function Person(name, age) {
+    // parent class
     this.name = name;
     this.age = age;
 
@@ -9,6 +10,7 @@ function Person(name, age) {
 }
 
 function Developer(name, age, stack, country) {
+    // child class
     Person.call(this)
     this.name = name;
     this.age = age;
@@ -24,9 +26,14 @@ Person.prototype = {
 
 Developer.prototype = Object.create(Person.prototype);
 Developer.prototype.constructor = Developer;
+Developer.prototype.play = function () {
+    console.log(`${this.name} is playing`);
+}
 
 const ayyub = new Developer('Ayyub', 23, 'MERN Stack', 'Bangladesh');
 ayyub.eat()
+ayyub.play()
+
 const iqbal = new Person('Iqbal', 23);
 
 console.log(ayyub);
