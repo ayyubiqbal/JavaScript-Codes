@@ -21,12 +21,17 @@ class Developer extends Person { //sub-class
     play() {
         console.log(`${this.name} is playing`);
     }
+    // polymorphism
+    eat() {
+        super.eat()
+        console.log(`${this.name} is eating rice`);
+    }
 }
 
 const ayyub = new Developer('Ayyub', 23, 'MERN Stack', 'Bangladesh');
 
 // console.log(ayyub);
-// ayyub.eat()
+ayyub.eat()
 // ayyub.play()
 
 const iqbal = new Person('Iqbal', 24)
@@ -61,9 +66,9 @@ class User {
 let user1 = new User('Ayyub', 22);
 let user2 = new User('Iqbal', 23);
 
-console.log(user1);
+// console.log(user1);
 
-User.isEqualAge(user1, user2)
+// User.isEqualAge(user1, user2)
 
 /* 
 console.log(user1.setName);
