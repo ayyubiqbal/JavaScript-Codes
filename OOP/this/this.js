@@ -84,7 +84,20 @@ var v3 = 'JavaScript';
 
 var v = [v1, v2, v3]
 
-printName.call(iqbal, v1, v2, v3)
-printName.apply(iqbal, v)
-var newFunc = printName.bind(iqbal, v1, v2, v3)
-newFunc()
+// printName.call(iqbal, v1, v2, v3)
+// printName.apply(iqbal, v)
+// var newFunc = printName.bind(iqbal, v1, v2, v3)
+// newFunc()
+
+
+// ---------- new binding ------------
+// ---------------------------------
+function User(name, age) {
+    this.name = name;
+    this.age = age;
+
+    console.log(`Hi, I'm ${this.name} and ${age} years old`);
+}
+
+const ayyub = new User('Ayyub', 23)
+// console.log(ayyub);
