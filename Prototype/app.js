@@ -42,12 +42,14 @@ console.log(person); */
     return person;
 } */
 
+
+// constructor function
 function PersonwithNew(name, age) {
     // let this = Object.create(PersonwithNew.prototype)
 
     this.name = name;
     this.age = age;
-    this.country = 'Bangladesh';
+    // this.country = 'Bangladesh';
 
     // return this;
 }
