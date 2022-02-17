@@ -1,6 +1,3 @@
-// console.log('hello world');
-
-
 // ------------------------------
 /* let person = {}
 
@@ -19,6 +16,7 @@ console.log(person); */
 
 // ------------------------------
 
+// ------------------------------
 /* const personMethods = {
     eat() {
         console.log(`Iqbal is eating`);
@@ -29,27 +27,33 @@ console.log(person); */
     play() {
         console.log(`Iqbal is playing`);
     },
-}; */
+};
 
 
-/* function Person(name, age) {
-    let person = Object.create(Person.prototype)
+function Person(name, age) {
+    let person = Object.create(personMethods)
     // console.log(person);
 
     person.name = name;
     person.age = age;
 
     return person;
-} */
+}
 
 
+const tamim = Person('Tamim', 25);
+const iqbal = Person('Iqbal', 23);
+console.log(tamim);
+tamim.play() */
+// ------------------------------
+
+// ------------------------------
 // constructor function
 function Person(name, age) {
-    // let this = Object.create(PersonwithNew.prototype)
+    // let this = Object.create(Person.prototype)
 
     this.name = name;
     this.age = age;
-    // this.country = 'Bangladesh';
 
     // return this;
 }
@@ -66,13 +70,12 @@ Person.prototype = {
     },
 }
 
-/* const tamim = Person('Tamim', 25);
-const iqbal = Person('Iqbal', 23); */
+
 
 const ayyub = new Person('Ayyub', 25);
 const mahfuz = new Person('Mahfuz', 23);
 ayyub.sleep()
-// console.log(tamim);
+console.log(ayyub);
 
 // ------------------------------
 
