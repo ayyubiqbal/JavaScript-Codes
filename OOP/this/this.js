@@ -5,7 +5,7 @@ explicit binding
 new binding
 window binding
 */
-
+"use strict";
 
 // ----------- implicit binding -----------
 var iqbal = {
@@ -95,9 +95,19 @@ var v = [v1, v2, v3]
 function User(name, age) {
     this.name = name;
     this.age = age;
+    // console.log(this);
 
-    console.log(`Hi, I'm ${this.name} and ${age} years old`);
+    // console.log(`Hi, I'm ${this.name} and ${age} years old`);
 }
 
 const ayyub = new User('Ayyub', 23)
 // console.log(ayyub);
+
+// ---------- window binding ------------
+// ---------------------------------
+
+var printName1 = function () {
+    console.log(this === window);
+    console.log(this.date);
+}
+printName1()
