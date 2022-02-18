@@ -64,15 +64,25 @@ for (let i = 1; i <= 10; i++) {
 //     i++;
 // }
 
-var isRunning = true;
+// var isRunning = false;
 
-while (isRunning) {
+/* while (isRunning) {
     random = Math.round(Math.random() * 10)
     if (random === 10) {
-        console.log('Hello, I\'m number 10');
+        // console.log('Hello, I\'m number 10');
         isRunning = false;
     } else {
-        console.log(`hello, I'm number ${random}`);
+        // console.log(`hello, I'm number ${random}`);
     }
 
+} */
+
+var isRunning = false;
+
+while (isRunning) {
+    // console.log(`I'm Running`);
 }
+
+do {
+    // console.log(`I'm Running`);
+} while (isRunning)
