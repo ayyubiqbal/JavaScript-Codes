@@ -86,3 +86,27 @@ while (isRunning) {
 do {
     // console.log(`I'm Running`);
 } while (isRunning)
+
+
+// nested loop
+// var n = 5;
+// for (var i = 1; i <= n; i++) {
+//     var result = '';
+//     for (var j = 1; j <= i; j++) {
+//         // console.log(` i = ${i} j = ${j}`);
+//         result += j;
+//     }
+//     console.log(result);
+// }
+
+
+var n = 10;
+
+for (var i = 1; i <= n; i++) {
+    var result = '';
+    for (var j = 1; j <= n; j++) {
+        // console.log(` i = ${i} j = ${j}`);
+        result += '* ';
+    }
+    console.log(result);
+}
