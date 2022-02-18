@@ -25,3 +25,34 @@ var fullName = name || 'Ayyub Iqbal';
 
 var isTrue = true;
 // isTrue && console.log('Everything is Ok');
+
+//-----------------------------------
+
+for (let i = 0; i <= 100; i += 10) {
+    // console.log(i, 'Hello world');
+}
+
+let sum = 0;
+let evenSum = 0;
+
+for (let i = 1; i <= 10; i++) {
+    // console.log(i);
+    // if (i % 2 === 0) {
+    //     console.log(i);
+    // }
+
+    // i % 2 === 0 && console.log("Even Number", i);
+    // i % 2 !== 0 && console.log("Odd Number", i);
+    /* if (i % 2 === 0) {
+        console.log(`${evenSum} + ${i} + = ${evenSum + i}`);
+        evenSum += i;
+    } */
+    // if (i % 2 === 0) evenSum += i;
+    i % 2 === 0 && (evenSum += i);
+
+    // console.log(`${sum} + ${i} + = ${sum + i}`);
+    sum += i;
+}
+
+console.log(`even sum is = ${evenSum}`);
+console.log(`sum is = ${sum}`);
