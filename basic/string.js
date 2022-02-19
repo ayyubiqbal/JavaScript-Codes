@@ -54,7 +54,7 @@ var c = a.concat(' ', b)
 // console.log('     fgfdghtr     '.trimEnd());
 // console.log('     fgfdghtr     '.trim ());
 
-// console.log(c.split(' '));
+console.log(c.split(' '));
 
 
 var str = 'Ayyub Iqbal';
