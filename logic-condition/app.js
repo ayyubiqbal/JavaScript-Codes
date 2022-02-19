@@ -125,9 +125,15 @@ while (true) {
 
 for (let i = 1; i <= 10; i++) {
     if (i % 5 === 0) {
-        console.log(`i % 5 === 0, ${i}`);
+        // console.log(`i % 5 === 0, ${i}`);
         break;
     } else {
-        console.log(`i % 5 === 0, false, ${i}`);
+        // console.log(`i % 5 === 0, false, ${i}`);
     }
+}
+
+// continue
+for (let i = 1; i <= 10; i++) {
+    if (i === 4 || i === 7) continue;
+    console.log(i);
 }
