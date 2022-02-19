@@ -135,5 +135,18 @@ for (let i = 1; i <= 10; i++) {
 // continue
 for (let i = 1; i <= 10; i++) {
     if (i === 4 || i === 7) continue;
-    console.log(i);
+    // console.log(i);
+}
+
+
+
+
+for (; ;) {
+    random = Math.round(Math.random() * 10)
+    if (random === 10) {
+        console.log('Hello, I\'m number 10');
+        break;
+    } else {
+        console.log(`hello, I'm number ${random}`);
+    }
 }
