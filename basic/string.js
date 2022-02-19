@@ -16,8 +16,8 @@ var str7 = num.toString()
 
 
 // String comparison
-var a = 'abc';
-var b = 'cba';
+// var a = 'abc';
+// var b = 'cba';
 
 // console.log(a < b);
 
@@ -29,4 +29,29 @@ var b = 'cba';
 // console.log('a' > 'Z');
 // console.log('Z' > 'a');
 
-console.log('001' == 1);
+// console.log('001' == 1);
+// in the time of comparison, javascript covert string into number using lexicography
+
+
+
+// --------------------------------
+
+var a = 'I am';
+var b = 'Ayyub Iqbal';
+
+var c = a.concat(' ', b)
+// console.log(c);
+// var d = c.substring(5, 10)
+// var d = c.substr(5, 5)
+// console.log(d);
+
+// console.log(c.charAt(5));
+// console.log(c.startsWith('I am'));
+// console.log(c.endsWith('Iqbal'));
+console.log(c.toUpperCase());
+console.log(c.toLowerCase());
+// console.log('     fgfdghtr     '.trimStart());
+// console.log('     fgfdghtr     '.trimEnd());
+// console.log('     fgfdghtr     '.trim ());
+
+console.log(c.split(' '));
