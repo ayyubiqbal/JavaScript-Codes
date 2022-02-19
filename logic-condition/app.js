@@ -108,5 +108,26 @@ for (var i = 1; i <= n; i++) {
         // console.log(` i = ${i} j = ${j}`);
         result += '* ';
     }
-    console.log(result);
+    // console.log(result);
+}
+
+
+// break statement
+while (true) {
+    random = Math.round(Math.random() * 10)
+    if (random === 10) {
+        // console.log('Hello, I\'m number 10');
+        break;
+    } else {
+        // console.log(`hello, I'm number ${random}`);
+    }
+}
+
+for (let i = 1; i <= 10; i++) {
+    if (i % 5 === 0) {
+        console.log(`i % 5 === 0, ${i}`);
+        break;
+    } else {
+        console.log(`i % 5 === 0, false, ${i}`);
+    }
 }
