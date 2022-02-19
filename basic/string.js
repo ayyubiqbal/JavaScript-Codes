@@ -48,10 +48,39 @@ var c = a.concat(' ', b)
 // console.log(c.charAt(5));
 // console.log(c.startsWith('I am'));
 // console.log(c.endsWith('Iqbal'));
-console.log(c.toUpperCase());
-console.log(c.toLowerCase());
+// console.log(c.toUpperCase());
+// console.log(c.toLowerCase());
 // console.log('     fgfdghtr     '.trimStart());
 // console.log('     fgfdghtr     '.trimEnd());
 // console.log('     fgfdghtr     '.trim ());
 
-console.log(c.split(' '));
+// console.log(c.split(' '));
+
+
+var str = 'Ayyub Iqbal';
+//console.log(str.charAt(11));// return '';
+var len = 0;
+while (true) {
+    if (str.charAt(len) == '') {
+        break;
+    } else {
+        len++
+    }
+}
+
+// console.log(len);
+// console.log(str.length);
+
+
+
+var num = 0;
+while (true) {
+    if (num === 100) {
+        break
+    } else {
+        num++
+    }
+    console.log(num);
+}
+
+// console.log(num);
