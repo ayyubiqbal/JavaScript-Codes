@@ -83,5 +83,29 @@ var arr7 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     arr7[arr7.length - 1 - i] = temp;
 }
 console.log(arr7); */
+var reverse = arr7.reverse()
+// console.log(reverse);
 
-console.log(arr7.reverse()); 
+// ----------------------------------------
+
+var arr8 = [1, 2, 3, 4, 5]
+var arr9 = arr8.join(' | ')
+// console.log(typeof arr9); //string
+// console.log(arr9);
+
+// console.log(arr8.fill(true));
+// console.log(arr8.fill(0));
+
+var arr10 = [6, 7, 8]
+// way to array adding(+) 
+var arr11 = arr8.concat(arr10, 9, 10, 11, 12)
+console.log(arr11);
+
+// console.log(Array.isArray(arr11));
+
+// array copy in immutable way
+var arr12 = Array.from(arr11)
+arr12.push(13)
+arr12[13] = 14;
+console.log(arr12);
+console.log(arr12.length);
