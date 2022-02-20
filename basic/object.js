@@ -101,3 +101,25 @@ console.log('------------------');
 console.log(Object.keys(obj9));
 console.log(Object.values(obj9));
 console.log(Object.entries(obj9));
+
+console.log('------------------');
+
+// ------------------
+
+// reference value
+const userOne = {
+    name: 'Ayyub Iqbal',
+    age: 23
+};
+const userTwo = userOne;
+console.log(userOne);
+console.log(userTwo);
+userOne.name = 'Mahfuz';
+console.log(userOne);
+console.log(userTwo);
+
+// object copy in immutable way
+const userThree = Object.assign({}, userOne);
+userThree.name = 'Al Amin';
+console.log(userOne);
+console.log(userThree);

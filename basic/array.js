@@ -107,5 +107,8 @@ console.log(arr11);
 var arr12 = Array.from(arr11)
 arr12.push(13)
 arr12[13] = 14;
+arr12[arr12.length] = 15;
+arr12[arr12.length] = 16;
+arr12[arr12.length] = 17;
 console.log(arr12);
 console.log(arr12.length);
