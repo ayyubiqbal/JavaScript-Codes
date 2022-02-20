@@ -39,7 +39,6 @@ console.log(obj5['x'] + obj5['y']);
 var show = 'y';
 console.log(obj5[show]);
 
-
 var obj6 = {
     x: 10
 }
@@ -53,4 +52,52 @@ obj6['y'] = 100;
 
 var prop = 'z'; //cur.name = 'z'
 obj6[prop] = 55; //obj6[cur.name] = 55;
+
+// ------------------
+delete obj6.x
 console.log(obj6);
+console.log('------------------');
+// ------------------
+
+var obj7 = {
+    a: 10,
+    b: 20,
+}
+
+var obj8 = {
+    a: 10,
+    b: 30,
+}
+
+// console.log(obj7 === obj8);
+if (obj7.a === obj8.a && obj7.b === obj8.b) {
+    console.log(true);
+} else {
+    console.log(false);
+}
+// comparison
+console.log(obj7);
+console.log(JSON.stringify(obj7) === JSON.stringify(obj8));
+console.log('------------------');
+// ------------------
+
+var obj9 = {
+    x: 23,
+    u: 25,
+    o: 39,
+}
+// in operator
+// console.log('x' in obj9);
+
+for (i in obj9) {
+    console.log(i);
+    console.log(obj9[i]);
+    console.log(i, obj9[i]);
+}
+console.log('------------------');
+
+// ------------------
+
+console.log(Object.keys(obj9));
+console.log(Object.values(obj9));
+console.log(Object.entries(obj9));
