@@ -71,6 +71,7 @@ console.log('-------------------------');
 
 // ------------------------------
 
+// reduce repeatable code using function
 function arraySum(arr) {
     var sum = 0;
     for (var i = 0; i < arr.length; i++) {
@@ -82,3 +83,30 @@ arraySum(arr1)
 arraySum(arr2)
 arraySum(arr3)
 arraySum([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+
+console.log('-------------------------');
+
+// function testFunc()
+function testFunc() {
+    // console.log(arguments);
+    // console.log(typeof a);
+    for (var i = 0; i < arguments.length; i++) {
+        console.log(arguments[i]);
+    }
+}
+
+// testFunc()
+testFunc(100, 200, 300)
+console.log('-------------------------');
+
+
+// ----------------------
+function addAll() {
+    var sum = 0;
+    for (var i = 0; i < arguments.length; i++) {
+        sum += arguments[i]
+    }
+    console.log(sum);
+}
+addAll(1, 2, 3, 4, 5)
+addAll(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
