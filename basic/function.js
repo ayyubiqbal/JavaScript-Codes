@@ -141,10 +141,37 @@ console.log(anotherAdd === addition);
 console.log(typeof anotherAdd, ',', typeof addition);
 
 
-setTimeout(() => {
+/* setTimeout(() => {
     console.log('I will be printed after 5 secs');
 }, 5000)
 
 setTimeout(function () {
     console.log('I will be printed after 3 secs');
-}, 3000)
+}, 3000) */
+
+console.log('-------------------------');
+
+// -------------------------
+function MyFunc(a, b) {
+    function addFunc() {
+        console.log(a + b);
+    }
+    addFunc()
+}
+
+MyFunc(15, 14)
+
+
+function mainFunction(greet, name) {
+    function innerFunction() {
+        if (name) {
+            return name.split(' ')[0]
+        }
+    }
+
+    var message = greet + ' ' + innerFunction()
+    console.log(message);
+}
+
+
+mainFunction('Good Afternoon', 'Ayyub Iqbal')
