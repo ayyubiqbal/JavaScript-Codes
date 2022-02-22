@@ -126,3 +126,25 @@ function person(name, email) {
 }
 var p1 = person('Ayyub Iqbal', 'ayyubiqbal.bd@gmail.com')
 console.log(p1);
+console.log('-------------------------');
+
+// -------------------------
+// var addition = function plus(a, b)
+var addition = function (a, b) {
+    return a + b;
+}
+// var anotherAdd = plus(10, 40)
+// var anotherAdd = addition(10, 40)
+var anotherAdd = addition
+console.log(anotherAdd(10, 50));
+console.log(anotherAdd === addition);
+console.log(typeof anotherAdd, ',', typeof addition);
+
+
+setTimeout(() => {
+    console.log('I will be printed after 5 secs');
+}, 5000)
+
+setTimeout(function () {
+    console.log('I will be printed after 3 secs');
+}, 3000)
