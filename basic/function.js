@@ -106,7 +106,23 @@ function addAll() {
     for (var i = 0; i < arguments.length; i++) {
         sum += arguments[i]
     }
-    console.log(sum);
+    // console.log(sum);
+    return sum;
 }
-addAll(1, 2, 3, 4, 5)
-addAll(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+var a = addAll(1, 2, 3, 4, 5)
+var b = addAll(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+console.log(a, b);
+
+console.log('-------------------------');
+
+// -------------------------
+
+function person(name, email) {
+    return {
+        name: name,
+        email: email
+    }
+    console.log('hello person'); //unreachable code after return
+}
+var p1 = person('Ayyub Iqbal', 'ayyubiqbal.bd@gmail.com')
+console.log(p1);
