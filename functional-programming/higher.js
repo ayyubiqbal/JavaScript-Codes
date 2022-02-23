@@ -1,3 +1,5 @@
+// passing a function to another function as a argument or return a function from another function is called higher order function
+
 function add(a, b) {
     return a + b;
 }
