@@ -12,6 +12,7 @@ console.log(sqr(2));
 console.log(sqr(2));
 
 
+// side effects example
 var n = 10;
 function MyFunc() {
     n = 100;
