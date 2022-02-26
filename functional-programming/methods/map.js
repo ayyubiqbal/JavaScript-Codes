@@ -14,6 +14,7 @@ console.log('--------------------');
 function map(arr, cb) {
     var newArr = []
     for (var i = 0; i < arr.length; i++) {
+        // var temp = arr[i] * arr[i];
         var temp = cb(arr[i], i, arr);
         newArr.push(temp)
     }
@@ -36,3 +37,9 @@ var tenTimes = map(arr, function (value) {
 })
 
 console.log(tenTimes);
+
+var fiveTimes = map(arr, function (value) {
+    return value * 5;
+})
+
+console.log(fiveTimes);
