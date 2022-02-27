@@ -27,3 +27,10 @@ console.log('I am Global Context');
 // b()
 // a()
 // execution of global context
+
+// execution context happened in two phase
+// 1. Creational phase
+// 2. Executional phase
+
+
+// execution context has some own objects
