@@ -17,7 +17,7 @@ function myFunc() {
 myFunc()
  */
 
-function myFunc() {
+/* function myFunc() {
     var msg = 'Lexical Scope and Closure';
 
     return function () {
@@ -27,4 +27,12 @@ function myFunc() {
 
 }
 var sayMsg = myFunc()
-sayMsg()
+sayMsg() */
+
+for (var i = 1; i <= 5; i++) {
+    (function (n) {
+        setTimeout(function () {
+            console.log(n);
+        }, 1000 * n)
+    })(i)
+}
