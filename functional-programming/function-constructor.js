@@ -53,3 +53,19 @@ const fBody = fData.body.reduce((acc, cur) => {
 
 const sumFunc = new Function(...fData.params, fBody);
 console.log(sumFunc(50, 60));
+
+console.log('-----------------------');
+
+const greetFn = new Function(
+    'name',
+    'email',
+    `
+    const fName = name.split(' ')[0];
+    console.log('Hello', fName, 'Good Morning! your email is', email);
+    return fName;
+    `
+)
+
+const fName = greetFn('Ayyub Iqbal', 'abuayubiqbal@gmail.com')
+console.log('Your first Name is', fName);
+// console.log();
