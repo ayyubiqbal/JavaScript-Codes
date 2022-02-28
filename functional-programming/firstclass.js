@@ -1,4 +1,6 @@
 // first class function features
+// we can treat function as value
+// 10, 'string', true, function
 
 function add(a, b) {
     return a + b;
