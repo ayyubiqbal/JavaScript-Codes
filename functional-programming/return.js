@@ -22,5 +22,7 @@ function power(p) {
     }
 }
 
-var base = power(2)
-console.log(base(4));
+var sqr = power(2)
+var cube = power(3)
+console.log(sqr(4));
+console.log(cube(4));

@@ -69,3 +69,24 @@ const greetFn = new Function(
 const fName = greetFn('Ayyub Iqbal', 'abuayubiqbal@gmail.com')
 console.log('Your first Name is', fName);
 // console.log();
+
+console.log('-----------------------');
+
+
+const operations = [
+    {
+        params: ['a', 'b'],
+        args: [5, 6],
+        body: 'console.log(a + b)',
+    },
+    {
+        params: ['a', 'b'],
+        args: [15, 6],
+        body: 'console.log(a - b)',
+    }
+]
+
+operations.forEach((operation) => {
+    const fn = new Function(...operation.params, operation.body)
+    fn(...operation.args)
+})
