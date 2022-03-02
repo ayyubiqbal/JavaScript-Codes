@@ -75,7 +75,7 @@ second(third) */
 
 
 // ---------------------------
-
+/* 
 function pyramidOfDoom() {
     setTimeout(() => {
         console.log(1);
@@ -94,4 +94,51 @@ function pyramidOfDoom() {
     }, 1000)
 }
 
-pyramidOfDoom()
+pyramidOfDoom() */
+
+// ------------------------
+
+// Example asynchronous function
+function asynchronousRequest(args, callback) {
+    // Throw an error if no arguments are passed
+    if (!args) {
+        return callback(new Error('Whoa! Something went wrong.'))
+    } else {
+        return setTimeout(
+            // Just adding in a random number so it seems like the contrived asynchronous function
+            // returned different data
+            () => callback(null, { body: args + ' ' + Math.round(Math.random() * 10) }),
+            500
+        )
+    }
+}
+
+// Nested asynchronous requests
+function callbackHell() {
+    asynchronousRequest('First', (error, response) => {
+        if (error) {
+            console.log(error)
+            return
+        }
+        console.log(response.body)
+
+        asynchronousRequest('Second', (error, response) => {
+            if (error) {
+                console.log(error)
+                return
+            }
+            console.log(response.body)
+
+            asynchronousRequest(null, (error, response) => {
+                if (error) {
+                    console.log(error)
+                    return
+                }
+                console.log(response.body)
+            })
+        })
+    })
+}
+
+// Execute
+callbackHell()
