@@ -87,21 +87,6 @@ function pyramidOfDoom() {
                     console.log(4);
                     setTimeout(() => {
                         console.log(5);
-                        setTimeout(() => {
-                            console.log(6);
-                            setTimeout(() => {
-                                console.log(7);
-                                setTimeout(() => {
-                                    console.log(8);
-                                    setTimeout(() => {
-                                        console.log(9);
-                                        setTimeout(() => {
-                                            console.log(10);
-                                        }, 10000)
-                                    }, 9000)
-                                }, 8000)
-                            }, 7000)
-                        }, 6000)
                     }, 5000)
                 }, 4000)
             }, 3000)
