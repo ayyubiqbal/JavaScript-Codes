@@ -91,7 +91,7 @@ async function getUserName(username) {
         const user = await get(`user?username=${comments[0].username}`)
         console.log(user);
     }
-    catch (e) {
-        console.log(e);
+    catch {
+        console.log('something wrong happened');
     }
 }
