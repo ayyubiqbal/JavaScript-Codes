@@ -1,9 +1,9 @@
 const axios = require('axios').default
 
-async function getUser() {
+async function getUsers() {
     const url = `https://jsonplaceholder.typicode.com/users`;
-    const { data: user } = await axios.get(url);
-    return user;
+    const { data: users } = await axios.get(url);
+    return users;
 }
 
 async function* getPostByUser(users) {
@@ -14,7 +14,7 @@ async function* getPostByUser(users) {
     }
 }
 
-getUser()
+getUsers()
     .then(async (users) => {
         // console.log(users);
         const userIterator = await getPostByUser(users)
