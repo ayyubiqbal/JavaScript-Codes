@@ -1,4 +1,4 @@
-// forEach modify the original array and map return a new array
+// map return a new value, which can be stored/assigned in a variable, on the other hand, forEach don't return any kind of value, it only do some operation to array element.
 
 var arr = [1, 2, 3, 4, 5]
 

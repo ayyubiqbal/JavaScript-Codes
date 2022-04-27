@@ -1,12 +1,13 @@
 var arr = [1, 2, 3, 4, 5]
 
-/* var sum = 0;
+var sum = 0;
 arr.forEach(function (value, index, array) {
     sum += value;
-    console.log(value, index, array);
+    console.log(value);
 })
 
-console.log(sum); */
+console.log(sum);
+console.log(arr);
 
 function forEach(arr, cb) {
     for (var i = 0; i < arr.length; i++) {
