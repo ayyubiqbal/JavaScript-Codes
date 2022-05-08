@@ -20,10 +20,11 @@ function map(arr, cb) {
     }
     return newArr;
 }
+function square(value) {
+    return value ** 2;
+}
 
-var sqr = map(arr, function (value) {
-    return value * value;
-})
+var sqr = map(arr, square)
 console.log(sqr);
 
 var cube = map(arr, function (value) {

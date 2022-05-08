@@ -1,4 +1,4 @@
-// coming data from outer scope to inner scope without (passing data) is called as closure
+// coming data from outer scope to inner scope without (passing data) is called closure
 var a = 10;
 
 function b() {
